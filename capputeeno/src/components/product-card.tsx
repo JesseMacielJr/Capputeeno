@@ -1,4 +1,3 @@
-import Image from "next/image";
 import styled from "styled-components";
 import formatPrice from "../utils/format-price";
 
