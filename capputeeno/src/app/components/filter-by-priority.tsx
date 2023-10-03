@@ -57,7 +57,7 @@ const PriorityFilter = styled.ul`
 
 export function FilterByPriority(props: FilterByPriorityProps) {
   const [isOpen, setIsOpen] = React.useState(false);
-  const { priority, setPriority } = useFilter();
+  const { setPriority } = useFilter();
 
   function handleOpen() {
     setIsOpen(!isOpen);
