@@ -40,6 +40,7 @@ const PriorityFilter = styled.ul`
   list-style: none;
 
   top: 100%; /* começa só quando acabar o componente pai */
+  right: 8px;
 
   li {
     color: var(--text-dark);

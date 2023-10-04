@@ -9,12 +9,12 @@ export function getCategoryByType(type: FilterTypes) {
 
 export function getFieldByPriority(priority: PriorityTypes) {
   if (priority === PriorityTypes.NEWS)
-    return { field: "created_at", order: "ASC" };
+    return { field: "created_at", order: "DSC" };
   if (priority === PriorityTypes.BIGGEST_PRICE)
     return { field: "price_in_cents", order: "DSC" };
   if (priority === PriorityTypes.MINOR_PRICE)
     return { field: "price_in_cents", order: "ASC" };
-  return { field: "sales", order: "ASC" };
+  return { field: "sales", order: "DSC" };
 }
 
 export function mountQuery(type: FilterTypes, priority: PriorityTypes) {
