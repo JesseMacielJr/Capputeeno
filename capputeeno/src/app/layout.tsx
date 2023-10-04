@@ -1,4 +1,4 @@
-import { FilterContextProvider } from "@/contexts/filter-context";
+import DefaultProviders from "@/components/default-providers";
 import type { Metadata } from "next";
 import { Saira } from "next/font/google";
 import { Header } from "../components/header";
@@ -20,12 +20,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="pt-BR">
       <body className={saira.className}>
-        <FilterContextProvider>
+        <DefaultProviders>
           <Header />
           {children}
-        </FilterContextProvider>
+        </DefaultProviders>
       </body>
     </html>
   );
